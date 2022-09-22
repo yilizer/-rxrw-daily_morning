@@ -5,9 +5,9 @@ from wechatpy.client.api import WeChatMessage, WeChatTemplate
 import requests
 import os
 import random
-
+import time
 today = datetime.now()
-date11=datetime.date.today ()
+date11=time.strftime('%Y-%m-%d',time.localtime(time.time()))
 start_date = os.environ['START_DATE']
 city = os.environ['CITY']
 birthday = os.environ['BIRTHDAY']
